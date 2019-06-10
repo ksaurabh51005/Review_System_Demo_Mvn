@@ -24,7 +24,7 @@ public class TypeIdMappingFactory {
 
     public static Map<String, Class<?>> getTypeIdMapping() {
         return SubclassFinder
-                .findAllSubtypes(DomainEvent.class, "de/tuhrig/rsd") // All domain events under the root package!
+                .findAllSubtypes(DomainEvent.class, "ks/sample") // All domain events under the root package!
                 .stream()
                 .collect(Collectors.toMap(clazz -> clazz.getSimpleName(), clazz -> clazz)); // simple name to class
     }

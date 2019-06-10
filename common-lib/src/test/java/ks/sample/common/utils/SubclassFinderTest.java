@@ -12,7 +12,7 @@ public class SubclassFinderTest {
 
     @Test
     public void should_FindAllEvents() {
-        List<Class> subtypes = SubclassFinder.findAllSubtypes(DomainEvent.class, "de/tuhrig/rsd");
+        List<Class> subtypes = SubclassFinder.findAllSubtypes(DomainEvent.class, "ks/sample");
         assertThat(subtypes).hasSize(2);
     }
 }
